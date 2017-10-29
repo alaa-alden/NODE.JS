@@ -67,3 +67,12 @@ in the node js here core modules, it's already functionalities of node.js
 ### core modules :
 1. **event module** ,it's similar in JQuery use event by : `element.on('click' ,function(){});` , so mean event module for create custom event use *EventEmitter* and then used on and emit function .
 2. **util** , it's works ,one of them inherits
+
+#the part night : reading & writing files (FS)
+**FS** is core modules for differentw thing but now for read and write
+
+##### the functions of FS:
+- **readFileSync** for read file as synchronous and get two parameters are path file and type read as utf8
+- **writeFileSync** for write file and give to parameters , they are name file and data
+- **readFile** same readFileSync but it's asynchronous so run code below then it , and give two parameters , they are err and data
+- **writeFile** same writeFileSync but it's asynchronous.

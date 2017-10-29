@@ -69,3 +69,52 @@ module.exports.counter=function(arr){
   return `there is ${arr.length} elements in array`;
 };
 ................*/
+
+
+
+//////////////////the eight part
+/*var events=require('events');
+
+var myEmitter=new events.EventEmitter();
+
+myEmitter.on('someEvent', function(mssg){
+  console.log(mssg);
+});
+myEmitter.emit('someEvent','its working');
+
+var util= require('util');
+
+var person=function(name){
+  this.name=name;
+};
+util.inherits(person,events.EventEmitter);
+
+var alaa=new person('alaa');
+var nene=new person ('nene');
+var meme=new person('meme');
+var people=[alaa,meme ,nene];
+people.forEach(function(person1){
+            person1.on('speak',function (mssg) {
+              console.log(person1.name + ' said : ' +mssg);
+            });
+});
+alaa.emit('speak','hi , Im alaa');
+*/
+
+
+//// 9
+/* synchronous
+var fs = require('fs');
+var readme= fs.readFileSync('readme.txt','utf8');
+console.log(readme);
+fs.writeFileSync('write.txt',readme);
+*/
+/* asynchronous
+var fs=require('fs');
+var readme=fs.readFile("readme.txt",'utf8',function (err,data) {
+  console.log(err);
+  fs.writeFile("test.txt",data);
+
+});
+console.log("I run fast");
+*/
