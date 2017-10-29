@@ -68,7 +68,7 @@ in the node js here core modules, it's already functionalities of node.js
 1. **event module** ,it's similar in JQuery use event by : `element.on('click' ,function(){});` , so mean event module for create custom event use *EventEmitter* and then used on and emit function .
 2. **util** , it's works ,one of them inherits
 
-#the part night : reading & writing files (FS)
+# the part night : reading & writing files (FS)
 **FS** is core modules for differentw thing but now for read and write
 
 ##### the functions of FS:
