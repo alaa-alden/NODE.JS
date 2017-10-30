@@ -78,11 +78,11 @@ in the node js here core modules, it's already functionalities of node.js
 - **writeFile** same writeFileSync but it's asynchronous.
 
 # the ten part : creating and removing Directories
-#####  more functions of FS :
-1. the file :
+####  **more functions of FS :**
+1. **the file** :
 - *unlink*  , it's function for delete file and you have to parameter , it's function
 2. **the folder** :
 - *mkdirSync*, it's function for create folder
 - *rmdirSync* , it's function for remove folder
-- *mkdir(1,2)** ,it's function for create folder by use asynchronous give function
+- *mkdir(1,2)* ,it's function for create folder by use asynchronous give function
 - *rmdir*,it's function for remove folder
