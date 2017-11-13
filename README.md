@@ -99,14 +99,15 @@ this data include:
 1. **Header** :
 - Content-Type
 - Status
+
 for write Header by `writeHead(s,{'Content-Type': 'html or test or json ........'})`
+
 for write Body by `end(data)`
 # the twelve part :creating a Server
 #### class :
 1. **http**:
 the class include functions for create server and ........
-1.1. **for create Server** :
- **createServer()**:
-you pass in the function a function take two parameters:*request* and *response*
-1.1.1. *this Server include the functions*:
+- **createServer()**:
+    you pass in the function a function take two parameters:*request* and *response*
+*this Server include the functions {for var server}*:
 - **listen**: the function for give the Server Port and IP
