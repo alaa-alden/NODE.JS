@@ -86,3 +86,26 @@ in the node js here core modules, it's already functionalities of node.js
 - *rmdirSync* , it's function for remove folder
 - *mkdir(1,2)** ,it's function for create folder by use asynchronous give function
 - *rmdir*,it's function for remove folder
+
+# the eleven part : Cline and Server side
+......................................
+
+######## Request:
+ sent massage from **Cline** to **Server** ,and sent the data by head and body
+this data include:
+- url
+######## Response:
+ sent massage from **Server** to **Cline** ,and sent the data by *head* and *body*
+1. **Header** :
+- Content-Type
+- Status
+for write Header by `writeHead(s,{'Content-Type': 'html or test or json ........'})`
+for write Body by `end(data)`
+# the twelve part :creating a Server
+#### class :
+- **http**:
+################### for create Server :
+1. **createServer()**:
+you pass in the function a function take two parameters:*request* and *response*
+#######################################  this Server include the functions:
+- **listen**: the function for give the Server Port and IP
