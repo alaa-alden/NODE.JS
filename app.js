@@ -4,5 +4,5 @@ var server =http.createServer(function(req,res){
   res.writeHead(200,{'Content-Type':'text/plain'});
   res.end('welcome to nodejs at morning');
 });
-server.listen(3000,'127.0.0.1');
+server.listen(3000,'127.0.0.4');
 console.log("test successful");
