@@ -90,9 +90,10 @@ in the node js here core modules, it's already functionalities of node.js
 
 ---
 
-# the part night : reading & writing files (FS)
+# the night part: reading & writing files (FS)
 **FS** is core modules for differentw thing but now for read and write
-##### the functions of FS:
+#### the functions of FS:
+
     - **readFileSync** for read file as synchronous and get two parameters are path file and type read as utf8
     - **writeFileSync** for write file and give to parameters , they are name file and data
     - **readFile** same readFileSync but it's asynchronous so run code below then it , and give two parameters , they are err and data
@@ -103,7 +104,7 @@ in the node js here core modules, it's already functionalities of node.js
 # the ten part : creating and removing Directories
 ####  **more functions of FS :**
 1. **the file** :
-  - *unlink*  , it's function for delete file and you have to parameter , it's function
+    - *unlink*  , it's function for delete file and you have to parameter , it's function
 2. **the folder** :
     - *mkdirSync*, it's function for create folder
     - *rmdirSync* , it's function for remove folder
@@ -111,27 +112,28 @@ in the node js here core modules, it's already functionalities of node.js
     - *rmdir*,it's function for remove folder
 
 # the eleven part : Cline and Server side
-......................................
-
-###### Request:
+#### Request:
  sent massage from **Cline** to **Server** ,and sent the data by head and body
 - this data include:
-  1. url
-###### Response:
+    - url
+#### Response:
  sent massage from **Server** to **Cline** ,and sent the data by *head* and *body*
-1. **Header** :
-  - Content-Type
-  - Status
+ - **Header** :
+    - Content-Type
+    - Status
 
-- for write Header by `writeHead(s,{'Content-Type': 'html or test or json ........'})`
+- for write Header by `writeHead(s,{'Content-Type': 'html or text or json ........'})`
 
 - for write Body by `end(data)`
 # the twelve part :creating a Server
 #### class or modules  :
 1. **http**:
-  the class include functions for create server and ........
-  - **createServer()**:
-    you pass in the function a function take two parameters:*request* and *response*
 
-*this Server include the functions {for var server}*:
+  the class include functions for create server and ........
+    - **createServer(** *function(){}* **)**:
+
+        you pass in the function a function take two parameters:*request* and     *response*
+
+ *this Server include the functions {for var server}*:
+
       - **listen()**: the function for give the Server *Port* and *IP*
