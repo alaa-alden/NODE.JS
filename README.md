@@ -63,7 +63,7 @@ the ways for create function
 
 ---
 
-#the sixth part : Modula and Require :
+# the sixth part : Modula and Require :
 - **require** :To include a module.
 - **exports**.*name Module* :create your own modules, to easily include them in your applications.
 
