@@ -93,11 +93,10 @@ in the node js here core modules, it's already functionalities of node.js
 # the night part: reading & writing files (FS)
 **FS** is core modules for differentw thing but now for read and write
 #### the functions of FS :
-
-    - **readFileSync** for read file as synchronous and get two parameters are path file and type read as utf8
-    - **writeFileSync** for write file and give to parameters , they are name file and data
-    - **readFile** same readFileSync but it's asynchronous so run code below then it , and give two parameters , they are err and data
-    - **writeFile** same writeFileSync but it's asynchronous.
+  - **readFileSync** for read file as synchronous and get two parameters are path file and type read as utf8.
+  - **writeFileSync** for write file and give to parameters , they are name file and data.
+  - **readFile** same readFileSync but it's asynchronous so run code below then it , and give two parameters , they are err and data.
+  - **writeFile** same writeFileSync but it's asynchronous.
 
 ---
 
@@ -127,13 +126,9 @@ in the node js here core modules, it's already functionalities of node.js
 - for write Body by `end(data)`
 # the twelve part :creating a Server
 #### class or modules  :
-1. **http**:
+1. **http** : the class include functions for create server and ........
 
-  the class include functions for create server and ........
-
-    - **createServer(** *function(){}* **)** :
-        you pass in the function a function take two parameters:*request* and     *response*
+    - **createServer(** *function(){}* **)** : you pass in the function a function take two parameters:*request* and *response* .
 
  *this Server include the functions {for var server}* :
-
-      - **listen()** : the function for give the Server *Port* and *IP*
+      - **listen()** : the function for give the Server *Port* and *IP* .
