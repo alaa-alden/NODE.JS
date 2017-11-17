@@ -121,10 +121,11 @@ in the node js here core modules, it's already functionalities of node.js
     - Content-Type
     - Status
 
-- for write Header by ``writeHead(s,{'Content-Type': 'html or text or json ........'})
-``
+- for write Header by ```java
+writeHead(s,{'Content-Type': 'html or text or json ........'})
+```
 
-- for write Body by `` end(data)``
+- for write Body by ```java end(data)```
 # the twelve part :creating a Server
 #### class or modules  :
 1. **http** : the class include functions for create server and ........
