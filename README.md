@@ -79,7 +79,7 @@ the ways for create function
  ```java
  module.exports.name-prop=code;
  ```
- ```java 
+ ```java
  module.exports={JSON that all object for export};
  ```
  - when you need use the prop write :
@@ -139,8 +139,8 @@ in the node js here core modules, it's already functionalities of node.js
 writeHead(s,{'Content-Type': 'html or text or json ........'});
 ```
 
-- for write Body by 
-```java 
+- for write Body by
+```java
 end(data);
 ```
 # the twelve part :creating a Server
@@ -158,7 +158,7 @@ buffer help data base to transfer by the better way with I/O process
 ---
 # the fourteenth part : Readable Streams
 the way same the old way but the way use buffer and stream for small used memory in this time ,so the way quickly.
-- **createReadStream(** *path , type coding* **)**: the inherits of EventEmitter so use 
+- **createReadStream(** *path , type coding* **)**: the inherits of EventEmitter so use
 ```java
 NameStream.on("data",function(chunk){
   //coding
@@ -168,4 +168,10 @@ NameStream.on("data",function(chunk){
 the way same the old way but the way use buffer and stream for small used memory in this time , so the way quickly.
 - **createWriteStream(** *path* **)**
   - *NameWriteStream*.**write(** *data* **)**
+---
+# the sixteenth part : PIPEs
+the method is called on a readable stream, adding this writable to its set of destinations , for easily and quickly.
+```java
+Name_ReadStream.pipe(Name_Write_Stream or any place  ); //as response from server to the cline
+```
 ---
