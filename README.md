@@ -121,12 +121,18 @@ in the node js here core modules, it's already functionalities of node.js
     - Content-Type
     - Status
 
-- for write Header by `writeHead(s,{'Content-Type': 'html or text or json ........'})`
+- for write Header by ```javascript writeHead(s,{'Content-Type': 'html or text or json ........'})```
 
-- for write Body by `end(data)`
+- for write Body by ```javascript end(data)```
 # the twelve part :creating a Server
 #### class or modules  :
 1. **http** : the class include functions for create server and ........
     - **createServer(** *function(req,res){}* **)** : you pass in the function a function take two parameters:*request* and *response* .
       - *this Server include the functions {for var server}* :
           - **listen(** *port , ip* **)** : the function for give the Server *Port* and *IP* .
+---
+# the thirteen part : Buffer and Stream
+- **Buffer**: A buffer is a temporary storage location for data while the data is being transferred.*if you show code from* [Muhammed Essa](https://www.youtube.com/watch?v=bINMY_MMU3Q&index=16&list=PLMYF6NkLrdN8zyk4SNJboLa94GqWv4cFU)
+buffer help data base to transfer by the better way with I/O process
+- **streams** : can create streams in node.js  to transfer data .
+##### when you use buffer and streams in your application when slower device for *increase performance*
