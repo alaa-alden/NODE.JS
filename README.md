@@ -142,3 +142,14 @@ end(data);
 buffer help data base to transfer by the better way with I/O process
 - **streams** : can create streams in node.js  to transfer data .
 ##### when you use buffer and streams in your application when slower device for *increase performance*
+---
+# the fourteenth part : Readable Streams
+the way same the old way but the way use buffer and stream for small used memory in this time ,so the way quickly.
+- **createReadStream(** *path , type coding* **)**: the inherits of EventEmitter so use ```java NameStream.on("data",function(chunk){
+  //coding
+  })```
+# the fifteenth part : Writable Stream
+the way same the old way but the way use buffer and stream for small used memory in this time , so the way quickly.
+- **createWriteStream(** *path** **)**
+  - *NameWriteStream*.**write(** *data* **)**
+---
