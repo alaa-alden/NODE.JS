@@ -73,14 +73,16 @@ the ways for create function
 - what is the module ?
   module is as library or class that include variable and function , if you will use that in the future .
  the way for many object when export uses properties
- 1. ```java
- module.exports.name-prop=var
+ ```java
+ module.exports.name-prop=var;
  ```
- 2. ```java
+ ```java
  module.exports.name-prop=code
  ```
- 3. ```java 
- module.exports={JSON that all object for export}```
+ 3.
+ ```java 
+ module.exports={JSON that all object for export};
+ ```
  - when you need use the prop write `var name-require =require ()` and `name-require.name-prop`
 
 ##### the template string is a new addition to es6 , it's easy way for write sentences  that include "string"+var+"string" , the way use \` \` back ticks and include var in `${var}`
