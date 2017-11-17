@@ -77,13 +77,19 @@ the ways for create function
  module.exports.name-prop=var;
  ```
  ```java
- module.exports.name-prop=code
+ module.exports.name-prop=code;
  ```
- 3.
  ```java 
  module.exports={JSON that all object for export};
  ```
- - when you need use the prop write `var name-require =require ()` and `name-require.name-prop`
+ - when you need use the prop write :
+ ```java
+ var name-require =require ()`
+ ```
+ **or**
+ ```java
+ name-require.name-prop
+ ```
 
 ##### the template string is a new addition to es6 , it's easy way for write sentences  that include "string"+var+"string" , the way use \` \` back ticks and include var in `${var}`
 
