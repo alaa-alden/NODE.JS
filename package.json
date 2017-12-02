@@ -4,6 +4,7 @@
   "description": "this start with node js",
   "main": "app.js",
   "dependencies": {
+    "body": "^5.1.0",
     "ejs": "^2.5.7",
     "express": "^4.16.2"
   },

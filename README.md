@@ -270,5 +270,10 @@ function for use call static files in views
 query string after that :`https:......?*****`
 if you want know query string form request use this:
 `req.query`
+[here](https://www.youtube.com/watch?v=QTAYRmMsVCI&index=29&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp)
 # the thirteenth part: handing post requests
 if you want use post  should use encoding data so use `body-parser` read about that
+[body-parser](https://www.npmjs.com/package/body-parser)
+if you want know data body string form request use this:
+`req.body`
+[here](https://www.youtube.com/watch?v=rin7gb9kdpk&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp&index=30&t=38s)
