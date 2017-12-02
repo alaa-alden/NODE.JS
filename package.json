@@ -1,0 +1,24 @@
+{
+  "name": "node.js",
+  "version": "1.0.0",
+  "description": "this start with node js",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaa-alden/NODE.JS.git"
+  },
+  "author": "alaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaa-alden/NODE.JS/issues"
+  },
+  "homepage": "https://github.com/alaa-alden/NODE.JS#readme"
+}

@@ -1,8 +1,18 @@
-var http=require('http');
-var server =http.createServer(function(req,res){
-  console.log(`you sent to me '${req.url}'`);
-  res.writeHead(200,{'Content-Type':'text/plain'});
-  res.end('welcome to nodejs at morning');
+var express=require('express');
+var app=express();
+
+app.set("view engine","ejs");
+app.use('/winner',express.static("stuff"));
+
+//get post delete put
+app.get("/",function(req,res) {
+  res.render("index");
 });
-server.listen(3000,'127.0.0.4');
-console.log("test successful");
+app.get("/contact",function (req,res) {
+  res.render("contact");
+});
+app.get("/profile/:name",function(req,res) {
+  var data ={age:22,job:'figher' ,arr:[1,2,3,4,5]};
+  res.render('profile',{person:req.params.name,data:data});
+});
+app.listen(3000);

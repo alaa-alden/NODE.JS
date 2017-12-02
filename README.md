@@ -136,7 +136,7 @@ in the node js here core modules, it's already functionalities of node.js
 
 - for write Header by
 ```java
-writeHead(s,{'Content-Type': 'html or text or json ........'});
+writeHead(s,{'Content-Type': 'text/plain || html or application/json ........'});
 ```
 
 - for write Body by
@@ -156,7 +156,7 @@ buffer help data base to transfer by the better way with I/O process
 - **streams** : can create streams in node.js  to transfer data .
 ##### when you use buffer and streams in your application when slower device for *increase performance*
 ---
-# the fourteenth part : Readable Streams
+# the fourteenth part : Readable Streams in (**fs**)
 the way same the old way but the way use buffer and stream for small used memory in this time ,so the way quickly.
 - **createReadStream(** *path , type coding* **)**: the inherits of EventEmitter so use
 ```java
@@ -164,7 +164,7 @@ NameStream.on("data",function(chunk){
   //coding
   })
   ```
-# the fifteenth part : Writable Stream
+# the fifteenth part : Writable Stream in (**fs**)
 the way same the old way but the way use buffer and stream for small used memory in this time , so the way quickly.
 - **createWriteStream(** *path* **)**
   - *NameWriteStream*.**write(** *data* **)**
@@ -175,3 +175,100 @@ the method is called on a readable stream, adding this writable to its set of de
 Name_ReadStream.pipe(Name_Write_Stream or any place  ); //as response from server to the cline
 ```
 ---
+
+# the seventeenth part : Serving HTML pages
+[here](https://www.youtube.com/watch?v=BBOUfdUZIVo&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp&index=17)
+---
+# the eighteenth part : serving JSON
+for convert json data into json string for show in browser
+```java
+JSON.stringifty(json_data);
+```
+---
+# the nineteenth part : Basic Routing
+for different between urls and  sent data use `if statement on req.rul `
+
+---
+# the twenty-th part :the node packages manager (npm)
+search packages from npm's page
+install :
+`npm install name-package`
+uninstall :
+`npm uninstall name-package`
+
+module
+Features
+express  : this helps us with routing and templating
+
+Robust routing
+Focus on high performance
+Super-high test coverage
+HTTP helpers (redirection, caching, etc)
+View system supporting 14+ template engines
+Content negotiation
+Executable for generating applications quickly
+
+---
+# the twenty first part : the package.json file
+package.json is file include about info your application
+for create package .json
+`npm init`
+when install any package register in package.json in dependencies by :
+`npm install name-package -save`
+**note** you can install many packages by *package.json* in dependencies
+---
+# the twenty second part : installing nodemon
+nodemon will watch the files in the directory in which nodemon was started, and if any files change, nodemon will automatically restart your node application. and so on
+[here](https://www.youtube.com/watch?v=4N0d8HhU5DE&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp&index=22)
+`npm install -g nodemon ` //-g means globally
+run your application:
+`nodemon main-file.js`
+for restart `rs`
+
+# the twenty third part : introduction to Express
+[here](https://www.youtube.com/watch?v=9TSBKO59u0Y&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp&index=23)
+- easy and flexible routing system
+- integrates with many templating engines
+- contains a middleware framework
+function replace `rep.writeHead() and rep.end()` by `rep.send()`
+# the twenty fourth part : express routing parameters
+[here](https://www.youtube.com/watch?v=MuMs1pLuT7I&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp&index=24)
+and different between get and post methods [here](https://www.youtube.com/watch?v=UObINRj2EGY)
+for send data in get by :`:name-data`
+and show data `req.params.naem-data`
+# the twenty fifth part : Template express
+`rep.sendFile(__dirname +"/name file ");`
+## Effective JavaScript templating.(ejs)
+"E" is for "effective." EJS is a simple templating language that lets you generate HTML markup with plain JavaScript. No religiousness about how to organize things. No reinvention of iteration and control-flow. It's just plain JavaScript.
+**Features:**
+    - Fast compilation and rendering
+    - Simple template tags: <% %>
+    - Custom delimiters (e.g., use <? ?> instead of <% %>)
+    - Includes
+    - Both server JS and browser support
+    - Static caching of intermediate JavaScript
+    - Static caching of templates
+    - Complies with the Express view system
+tell express about view engine is ejs by
+`app-express .set("view engine", "ejs") //default view folder `
+and end file `.ejs`
+and method for read the file is `res.render("file.ejs")`
+and sent data to the page by json as second parameter in `res.render("file.ejs",{name-data:req.params.name-data})`
+`<% = %>//output data`
+# the twenty sixth part :Template Engines ( part 2 )
+you can use js in html in `<% %>`
+# the twenty seventh part :  partial templates
+`<% include folder/file %>`
+# the twenty eighth part : middleware & static files
+function for use call static files in views
+```java
+  app.use(1,2)//1 is parameter when call from view ,2 is function for work when use 1
+  app.use ("assets",express.static(folder that include static_file));
+```
+
+# the twenty ninth part : query string
+query string after that :`https:......?*****`
+if you want know query string form request use this:
+`req.query`
+# the thirteenth part: handing post requests
+if you want use post  should use encoding data so use `body-parser` read about that

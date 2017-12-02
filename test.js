@@ -118,3 +118,31 @@ var readme=fs.readFile("readme.txt",'utf8',function (err,data) {
 });
 console.log("I run fast");
 */
+/*..................22
+
+
+var http=require('http');
+var fs=require('fs');
+var server =http.createServer(function(req,res){
+  console.log(`you sent to me '${req.url}'`);
+  if(req.url === "/home" ||req.url==="/"){
+    res.writeHead(200,{'Content-Type':'text/html'});
+    fs.createReadStream(__dirname+"/index.html").pipe(res);
+  }
+  else if(req.url==='/contact'){
+    res.writeHead(200,{'Content-Type':'text/html'});
+    fs.createReadStream(__dirname+"/contact.html").pipe(res);
+  }
+  else if(req.url==='/api/winner'){
+    var winner =[{name:'alaa' ,age:22},{name:'winner' , age:22}];
+    res.writeHead(200,{'Content-Type':'application/json'});
+    res.end(JSON.stringify(winner));
+  }else {
+    res.writeHead(404,{'Content-Type':'text/html'});
+    fs.createReadStream(__dirname+"/404.html").pipe(res);
+  }
+});
+server.listen(3000,'127.0.0.4');
+console.log("test successful");
+
+*/
