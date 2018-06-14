@@ -294,7 +294,7 @@ you should use :
   - remove(function(err,data)) : it should find date for remove 
 # Note :
 ## algorithm oauth by passport  
-1. create app in platrom developer -->xxx
+1. create app in platfrom developer -->xxx
 2. coding auth with passport and build strateg xxx and pass info for them
 3. create router for auth and context auth-xxx etc .....
 4. create session and cookie for users	
