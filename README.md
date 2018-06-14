@@ -292,3 +292,10 @@ you should use :
   // docs.forEach
 }
   - remove(function(err,data)) : it should find date for remove 
+# Note :
+## algorithm oauth by passport  
+1. create app in google developer 
+2. coding auth with passport with strateg google and pass info for them
+3. create router for auth and context auth-google etc .....
+4. create session and cookie for users	
+5. final logout process
