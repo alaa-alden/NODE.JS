@@ -306,3 +306,4 @@ you should use :
 - create .env in you project 
 - you must have tool for read it, it's called dotenv
 - call fun for config evn variable
+- you can specify variable to pass by config.js
