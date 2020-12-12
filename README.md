@@ -299,3 +299,10 @@ you should use :
 3. create router for auth and context auth-xxx etc .....
 4. create session and cookie for users	
 5. final logout process
+# work with env:
+## with command line :
+- `PORT=8080 yarn start`
+## with env
+- create .env in you project 
+- you must have tool for read it, it's called dotenv
+- call fun for config evn variable
